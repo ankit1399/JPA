@@ -5,13 +5,13 @@ import javax.persistence.Id;
 @Entity
 public class Teacher{
 	
-	public String schoolname;
+	public String schoolName;
 	public String name;
 	@Id
 	public int id;
 	public int age;
-	public Teacher(int id, int age,String name,String schoolname) {
-		this.schoolname=schoolname;
+	public Teacher(int id, int age,String name,String schoolName) {
+		this.schoolName=schoolName;
 		this.age=age;
 		this.id=id;
 		this.name=name;
@@ -21,11 +21,11 @@ public class Teacher{
 		
 	}
 	
-	public String getSchoolname() {
-		return schoolname;
+	public String getSchoolName() {
+		return schoolName;
 	}
 	public void setSchoolname(String schoolname) {
-		this.schoolname = schoolname;
+		this.schoolName = schoolName;
 	}
 	public int  getId() {
 		return id;
