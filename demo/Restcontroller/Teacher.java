@@ -1,10 +1,8 @@
 package com.example.demo.Restcontroller;
-
 import javax.persistence.Entity;
 import javax.persistence.Id;
 @Entity
 public class Teacher{
-	
 	public String schoolName;
 	public String name;
 	@Id
@@ -15,12 +13,9 @@ public class Teacher{
 		this.age=age;
 		this.id=id;
 		this.name=name;
-		
-	}
+		}
 	public Teacher() {
-		
-	}
-	
+		}
 	public String getSchoolName() {
 		return schoolName;
 	}
@@ -36,5 +31,4 @@ public class Teacher{
 	public String  getName() {
 		return name;
 	}
-	
 }
