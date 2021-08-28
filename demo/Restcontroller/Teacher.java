@@ -15,12 +15,9 @@ public class Teacher{
 		this.age=age;
 		this.id=id;
 		this.name=name;
-		
-	}
+		}
 	public Teacher() {
-		
-	}
-	
+		}
 	public String getSchoolName() {
 		return schoolName;
 	}
@@ -36,5 +33,4 @@ public class Teacher{
 	public String  getName() {
 		return name;
 	}
-	
-}
+	}
