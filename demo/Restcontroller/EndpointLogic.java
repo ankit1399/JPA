@@ -10,13 +10,13 @@ public class EndpointLogic {
 	public Teacher getTeacher(int id) {
 		return repo.findById(id).get();
 	}
-    public void postTeacher(Teacher teacher) {
+       public void postTeacher(Teacher teacher) {
 		repo.save(teacher);
 		}
-	public void updateTeacher(Teacher teacher) {
+       public void updateTeacher(Teacher teacher) {
 		repo.save(teacher);
 	}
-		public void deleteTeacher( int id) {
+       public void deleteTeacher( int id) {
 				repo.deleteById(id);
 			}
 }
