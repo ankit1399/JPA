@@ -1,5 +1,5 @@
 package com.example.demo.Restcontroller;
-import java.util.List;
+import javax.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,10 +18,10 @@ public class Restcontroller {
 		return news.getTeacher(id);
 	}
 	@PostMapping("/teacher")
-	public void postTeacher(@RequestBody Teacher teacher) {
+	public void postTeacher(@Valid @RequestBody Teacher teacher) {
 	    news.postTeacher(teacher);
 	}
-	@PutMapping("/teacher")
+	@PutMapping("/Updateteacher")
 	public void updateTeacher(@RequestBody Teacher teacher) {
 		news.updateTeacher(teacher);
 	}

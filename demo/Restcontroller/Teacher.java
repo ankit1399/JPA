@@ -1,36 +1,20 @@
 package com.example.demo.Restcontroller;
-
+import lombok.*;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.validation.constraints.NotBlank;
+import org.hibernate.validator.constraints.Range;
+import lombok.Data;
 @Entity
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class Teacher{
-	
 	public String schoolName;
+	@NotBlank
 	public String name;
 	@Id
 	public int id;
+	@Range(min = 1)
 	public int age;
-	public Teacher(int id, int age,String name,String schoolName) {
-		this.schoolName=schoolName;
-		this.age=age;
-		this.id=id;
-		this.name=name;
-		}
-	public Teacher() {
-		}
-	public String getSchoolName() {
-		return schoolName;
-	}
-	public void setSchoolname(String schoolname) {
-		this.schoolName = schoolName;
-	}
-	public int  getId() {
-		return id;
-	}
-	public int  getAge() {
-		return age;
-	}
-	public String  getName() {
-		return name;
-	}
 	}
