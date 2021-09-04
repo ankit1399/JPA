@@ -1,6 +1,7 @@
 package com.example.demo.Restcontroller;
 import java.util.ArrayList;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 @Service
@@ -16,7 +17,7 @@ public class EndpointLogic {
 	public void updateTeacher(Teacher teacher) {
 		repo.save(teacher);
 	}
-		public void deleteTeacher( int id) {
+	public void deleteTeacher( int id) {
 				repo.deleteById(id);
 			}
 }
